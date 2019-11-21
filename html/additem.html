@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>뇽카롱 : 제품 추가 </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+
+<style>
+    .card-content{
+        background-color: rgb(247, 247, 247);
+    }
+</style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="http://192.168.175.130">macaron</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://192.168.175.130">홈
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://192.168.175.130/lineup.html?page=1">라인업</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="http://192.168.175.130/cart.html">장바구니</a>
+            </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="http://192.168.175.130/additem.html">관리자 : 상품 추가</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">장바구니</a>
+          </li> -->
+          <li class="nav-item" style="margin-left: 10px;">
+              <a class="btn btn-primary btn-md" href="http://192.168.175.130/login.html">로그인</a>
+            </li>
+          <li class="nav-item" style="margin-left: 10px;">
+              <a class="btn btn-secondary btn-md" href="http://192.168.175.130/register.html">회원가입</a>
+          </li>
+          <!-- <li class="nav-item" style="margin-left: 10px;">
+            <a class="nav-link" href="#">관리</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="macaron_main" class="bg-primary py-5 mb-5" style="background-image: url('img/macaron_main.png'); background-repeat: no-repeat; background-position: right;">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-4">관리자 : 상품 추가 페이지</h1>
+          <p class="lead mb-5 text-white-70"> 관리자 페이지입니다. 
+                <br> 상품을 추가하세요.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+      <h2 class="display-6 mt-5 mb-4">상품 추가</h2>
+      <form action="http://192.168.175.130/lineup.html" method="POST" enctype="multipart/form-data">
+        <div class="form-group mb-4">
+           <label>제품명</label>
+           <input type="text" class="form-control" placeholder="제품명" name="productName">
+        </div>
+        <div class="form-group mb-4">
+           <label>가격</label>
+           <input type="number" class="form-control" placeholder="가격" name="productPrice">
+        </div>
+        <div class="form-group mb-4">
+           <label>설명</label>
+           <textarea class="form-control" rows="8" placeholder="설명" name="productDescribe"></textarea>
+       </div>
+
+       <div class="form-group mb-5">
+          <label>이미지 업로드</label><br>
+          <input type="file" id="uploadFile" accept=".jpg, .png" name="uploadImage"/>
+         </div>
+       
+       <p><button type="submit" class="btn btn-primary">제품 추가</button></p>
+
+       
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Nyong Caron. 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

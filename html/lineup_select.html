@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>뇽카롱 : 제품 상세</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+
+
+<style>
+    .card-content{
+        background-color: rgb(247, 247, 247);
+    }
+
+    .grid-select{
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+    }
+
+    @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+.spinner input {
+  text-align: right;
+}
+
+.input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 2%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.input-group-btn-vertical > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+}
+
+.input-group-btn-vertical > .btn:first-child {
+  border-top-right-radius: 4px;
+}
+
+.input-group-btn-vertical > .btn:last-child {
+  margin-top: -2px;
+  border-bottom-right-radius: 4px;
+}
+
+.input-group-btn-vertical i {
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+    
+    
+</style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="http://192.168.175.130">macaron</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://192.168.175.130">홈
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="http://192.168.175.130/lineup.html?page=1">라인업</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="http://192.168.175.130/cart.html">장바구니</a>
+            </li>
+          <li class="nav-item">
+                <a class="nav-link" href="http://192.168.175.130/additem.html">관리자 : 상품 추가</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">장바구니</a>
+          </li> -->
+          <li class="nav-item" style="margin-left: 10px;">
+              <a class="btn btn-primary btn-md" href="http://192.168.175.130/login.html">로그인</a>
+            </li>
+          <li class="nav-item" style="margin-left: 10px;">
+              <a class="btn btn-secondary btn-md" href="http://192.168.175.130/register.html">회원가입</a>
+          </li>
+          <!-- <li class="nav-item" style="margin-left: 10px;">
+            <a class="nav-link" href="#">관리</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="macaron_main" class="bg-primary py-5 mb-5" style="background-image: url('img/macaron_main.png'); background-repeat: no-repeat; background-position: right;">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-4">오늘의 라인업</h1>
+          <p class="lead mb-5 text-white-70">아기자기한 미니카롱부터 눈이 휘둥그레지는 뚱카롱까지, 
+              <br> 매일 매일 다양한 라인업을 여러분께 선보입니다.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container mb-5">
+    <div class="col-lg-12 grid-select">
+
+        <div class="card mt-4 card-vertical">
+          <img class="card-img-top img-fluid" src="https://cdn.shopify.com/s/files/1/1414/7912/products/BloodOrange.jpg?v=1491597353" alt="">
+        </div>
+
+        <div class="card-body ml-5">
+            <h2 class="card-title mt-5">블러디 오렌지</h2>
+            <h3 class="mt-4">₩ 2,400</h3>
+            <p class="card-text mt-4">피가 터지는 듯한 식감의 감귤 향 마카롱.<br>꼬끄는 프랑스 식으로 필링은 오렌지 버터를 사용한 것이 특징입니다.</p>
+            
+            <br>
+            <p class="card-text mt-2"> 수량 : </p> 
+
+            <div class="col-md-3">
+                
+                <form action="http://192.168.175.130/cart.html" method="POST">
+                    <div class="input-group spinner">
+                          
+                      <input type="number" class="form-control" value="1" min="0" max="30">
+                      <div class="input-group-btn-vertical">
+                        <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i>개</button>
+                        <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                      </div>
+                    </div>
+                    <p>
+                        <button type="submit" class="btn btn-primary">구매하기</button>
+                    </p>
+                </form>
+            
+          </div>
+          <a class="btn btn-secondary btn-md" href="http://192.168.175.130/lineup.html?page=1" style="position: relative; right: -370px;">라인업 목록</a>
+          </div>
+   
+      
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Nyong Caron. 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+      $(function(){
+    
+        $('.spinner .btn:first-of-type').on('click', function() {
+          var btn = $(this);
+          var input = btn.closest('.spinner').find('input');
+          if (input.attr('max') == undefined || parseInt(input.val()) < parseInt(input.attr('max'))) {    
+            input.val(parseInt(input.val(), 10) + 1);
+          } else {
+            btn.next("disabled", true);
+          }
+        });
+        $('.spinner .btn:last-of-type').on('click', function() {
+          var btn = $(this);
+          var input = btn.closest('.spinner').find('input');
+          if (input.attr('min') == undefined || parseInt(input.val()) > parseInt(input.attr('min'))) {    
+            input.val(parseInt(input.val(), 10) - 1);
+          } else {
+            btn.prev("disabled", true);
+          }
+        });
+    
+    })
+  </script>
+
+</body>
+
+</html>

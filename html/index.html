@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>달콤 달콤 뇽카롱! ^^*</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="http://192.168.175.130">macaron</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="http://192.168.175.130">홈
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://192.168.175.130/lineup.html?page=1">라인업</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" href="http://192.168.175.130/cart.html">장바구니</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://192.168.175.130/additem.html">관리자 : 상품 추가</a>
+          </li>
+          <li class="nav-item" style="margin-left: 10px;">
+              <a class="btn btn-primary btn-md" href="http://192.168.175.130/login.html">로그인</a>
+            </li>
+          <li class="nav-item" style="margin-left: 10px;">
+              <a class="btn btn-secondary btn-md" href="http://192.168.175.130/register.html">회원가입</a>
+          </li>
+          <li class="nav-item" style="margin-left: 10px;">
+                <a class="nav-link" href="#" >
+                  <?php 
+                    if(empty($_POST["userId"])){
+
+                    }else{
+                      echo "안녕하세요, {$_POST["userId"]} 님!";
+                    };
+                  ?> 
+                </a>
+              </li>
+          <!-- <li class="nav-item" style="margin-left: 10px;">
+            <a class="nav-link" href="#">관리</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header id="macaron_main" class="bg-primary py-5 mb-5" style="background-image: url('img/macaron_main.png'); background-repeat: no-repeat; background-position: right;">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-4">Nyong Caron</h1>
+          <p class="lead mb-5 text-white-70">마카롱에 대한 끝없는 사랑이 지금의 뇽카롱을 만들었습니다. 
+                <br> 사랑이 듬뿍 담긴 달콤함의 결정체를 지금 여기에서 만나보세요.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h2>뇽카롱의 라인업</h2>
+        <hr>
+        <p> 매일 매일 다양한 라인업을 여러분께 선보입니다.</p>
+        <p> 아기자기한 미니카롱부터 눈이 휘둥그레지는 뚱카롱까지, 이제 행복함을 입 안에 선물하세요.</p>
+        <br>
+        <a class="btn btn-primary btn-lg" href="http://192.168.175.130/lineup.html?page=1">라인업 보러가기 &raquo;</a>
+      </div>
+      <div class="col-md-4 mb-5">
+        <h2>소중한 만남은..</h2>
+        <hr>
+        <address>
+          <p> <strong>마카롱 전문점 : Nyong Caron</strong> </p>
+          <p>경기도 과천시 향촌 3길, 19번지<br>
+          10:00 ~ 17:00 </p>
+          
+        </address>
+        <address>
+          
+          010-6436-4410
+          <br>
+          
+          <p>vsyugoa@naver.com</p>
+        </address>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+        <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="img/chef.jpg" alt="" style="height: 480px;">
+                    <div class="card-body">
+                    <h4 class="card-title">따뜻함, 친절함.</h4>
+                    <p class="card-text">항상 사랑을 담아 드립니다.</p>
+                    </div>
+                    <!-- <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                    </div> -->
+                </div>
+              </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/macarons2.jpg" alt="" style="height: 330px;">
+          <div class="card-body">
+            <h4 class="card-title">신선함, 산뜻함.</h4>
+            <p class="card-text">매일 갓 구워낸 마카롱을 판매합니다.</p>
+          </div>
+          <!-- <div class="card-footer">
+            <a href="#" class="btn btn-primary">Find Out More!</a>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="img/macarons.jpg" alt="" style="height: 250px;">
+          <div class="card-body">
+            <h4 class="card-title">다양함, 재미.</h4>
+            <p class="card-text">20여가지의 다양한 마카롱과 특별한 날의 당신을 위한 마카롱까지. </p>
+          </div>
+          <!-- <div class="card-footer">
+            <a href="#" class="btn btn-primary">Find Out More!</a>
+          </div> -->
+        </div>
+      </div>
+      
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Nyong Caron. 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
